@@ -1,0 +1,17 @@
+{
+    "name": "Autify Result Filter",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "description": "Autify Result Filter",
+    "content_scripts": [{
+        "matches" : [
+            "https://app.autify.com/projects/*/results/*/capabilities/*/scenarios/*"
+        ],
+        "css": [
+            "css.css"
+        ],
+        "js": [
+            "content.js"
+        ]
+    }]
+  }
